@@ -22,4 +22,4 @@ cd website
 
 <h2>License</h2>
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT License](LICENSE)
