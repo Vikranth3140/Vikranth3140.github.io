@@ -38,12 +38,12 @@
                 <a href="https://drive.google.com/file/d/1QGfjXKX-IhWY8EuDVQ4bpgRF3wklROBV/view?usp=sharing" class="btn">View CV</a>
             </div>
             <div class="home-img">
-                <img src="vik-images\my-image.jpg" alt="" style="border-radius: 10%;">
+                <img src="assets\vik-images\my-image.jpg" alt="" style="border-radius: 10%;">
             </div>
         </section>
         <section class="about" id="about">
             <div class="about-img">
-                <img src="vik-images\my-image2.jpg" alt="" style="border-radius: 10%;">
+                <img src="assets\vik-images\my-image2.jpg" alt="" style="border-radius: 10%;">
             </div>
             <div class="about-content">
                 <h2 class="heading">About<span> Me</span></h2>
@@ -175,15 +175,15 @@
             <h2 class="heading">My<span> Projects</span></h2>
             <div class="portfolio-container">
                 <div class="portfolio-box">
-                    <img src="project-images\StickHero.png" alt="Stick Hero" height="400px">
+                    <img src="assets\project-images\StickHero.png" alt="Stick Hero" height="400px">
                     <div class="portfolio-layer">
-                        <h4>Perssonal Portfolio</h4>
+                        <h4>StickHero</h4>
                         <p>The Stick Hero is a simple JavaFX game where the player controls a character who extends a stick to cross platforms and avoid obstacles. The game features dynamic stick extension, character movement and cherry collection.</p>
                         <a href="https://github.com/Vikranth3140/StickHero"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="project-images\VikShell.png" alt="VikShell" height="400px">
+                    <img src="assets\project-images\VikShell.png" alt="VikShell" height="400px">
                     <div class="portfolio-layer">
                         <h4>VikShell - Custom Linux Shell</h4>
                         <p>A custom Linux shell using custom commands: word, dir, date, ls, cd, help and mkdir along with command-line options. It provides functionalities such as word counting, directory creation, and retrieving file information.</p>
@@ -191,7 +191,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="project-images\BitCrypt.png" alt="VikShell" height="400px">
+                    <img src="assets\project-images\BitCrypt.png" alt="VikShell" height="400px">
                     <div class="portfolio-layer">
                         <h4>BitCrypt</h4>
                         <p>BiCrypt Password Manager is a secure and lightweight command-line password manager written in Python. It allows users to securely store, generate and manage their passwords.</p>
@@ -199,7 +199,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="project-images\Taste-Of-API.png" alt="VikShell" height="400px">
+                    <img src="assets\project-images\Taste-Of-API.png" alt="VikShell" height="400px">
                     <div class="portfolio-layer">
                         <h4>Taste Of API - Food App</h4>
                         <p>Taste of API is a user-centric app and website designed to offer a delightful culinary experience, allowing users to explore various cuisines and plan their meals based on specified calorie requirements.</p>
@@ -207,7 +207,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="project-images\CityInsight.png" alt="VikShell" height="400px">
+                    <img src="assets\project-images\CityInsight.png" alt="VikShell" height="400px">
                     <div class="portfolio-layer">
                         <h4>CityInsight</h4>
                         <p>CityInsight is a Python application that integrates weather and news information, providing city-centric insights. It is built with Streamlit and offers real-time weather updates and top headlines tailored to your chosen city.</p>
@@ -218,7 +218,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="project-images\Zoo-Management-System.png" alt="VikShell" height="400px">
+                    <img src="assets\project-images\Zoo-Management-System.png" alt="VikShell" height="400px">
                     <div class="portfolio-layer">
                         <h4>Zoo Management System</h4>
                         <p>The Zoo Management System is a Java-based OOPS application designed to manage zoos, animals, and attractions in a zoo. It allows administrators and visitors to use this system to visit the zoo without any hassle.</p>
@@ -264,8 +264,8 @@
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
             const form = document.forms['submit-to-google-sheet']
-            const msg=document.getElementById("msg")
-          
+            const msg = document.getElementById("msg")
+
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
