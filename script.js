@@ -31,7 +31,7 @@ window.onscroll = () => {
 
     // Toggling the 'sticky' class on the header based on scroll position
     let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.screenY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     // Resetting the menu icon and navbar
     menuIcon.classList.remove('bx-x');
@@ -60,3 +60,28 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+// Handling form submission
+let contactForm = document.getElementById('contact-form');
+
+contactForm.onsubmit = function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Fetch API to send form data to Google Apps Script endpoint
+    fetch('https://script.google.com/macros/s/AKfycbwTb36MTP9llw3LWg3QPnPUgOcRDZjC5oh1mSlP4g5VhmI3aKUFaMuULF_zyvIZ31NyUQ/exec', {
+        method: 'POST',
+        body: new FormData(contactForm)
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Message sent successfully!');
+            contactForm.reset(); // Reset form fields
+        } else {
+            throw new Error('Failed to send message.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to send message. Please try again later.');
+    });
+};
