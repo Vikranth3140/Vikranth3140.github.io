@@ -31,7 +31,7 @@ window.onscroll = () => {
 
     // Toggling the 'sticky' class on the header based on scroll position
     let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.screenY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     // Resetting the menu icon and navbar
     menuIcon.classList.remove('bx-x');
