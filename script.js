@@ -31,7 +31,7 @@ window.onscroll = () => {
 
     // Toggling the 'sticky' class on the header based on scroll position
     let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.screenY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     // Resetting the menu icon and navbar
     menuIcon.classList.remove('bx-x');
@@ -59,4 +59,15 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 100,
     backDelay: 1000,
     loop: true
+});
+
+// Handling form submission to Google Sheets
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwDrEPlV2a1C-J-t2BkD8W1pJHrWZ9MmKzEXRPY/exec';
+const form = document.forms['submit-to-google-sheet'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Message sent successfully!"))
+        .catch(error => console.error('Error!', error.message));
 });

@@ -227,22 +227,17 @@
                 </div>
             </div>
         </section>
-        <section class="contact"id="contact">
-            <h2 class="heading">Contact<span> Me</span></h2>
-
-            <form action="#" name="submit-to-google-sheet">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Full Name">
-                    <input type="email" name="Email Address" placeholder="Email Address">
-                </div>
-                <div class="input-box">
-                    <input type="number" name="Mobile Number"placeholder="Mobile Number">
-                    <input type="text"name="Email Subject" placeholder="Email Subject">
-                </div>
-                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message"class="btn">
-            </form>
-            <span id="msg"></span>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <div class="contact-form">
+                <form id="submit-to-google-sheet" name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </section>
 
         <footer class="footer">
@@ -262,22 +257,16 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="script.js"></script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
-            const form = document.forms['submit-to-google-sheet']
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwTb36MTP9llw3LWg3QPnPUgOcRDZjC5oh1mSlP4g5VhmI3aKUFaMuULF_zyvIZ31NyUQ/exec';
+            const form = document.forms['submit-to-google-sheet'];
             const msg = document.getElementById("msg")
-
+        
             form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML="Message sent successfully"
-                    setTimeout(function(){
-                        msg.innerHTML=""
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => alert("Message sent successfully!"))
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
     </body>
 </html>
