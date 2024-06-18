@@ -61,27 +61,13 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-// Handling form submission
-let contactForm = document.getElementById('contact-form');
+// Handling form submission to Google Sheets
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwDrEPlV2a1C-J-t2BkD8W1pJHrWZ9MmKzEXRPY/exec';
+const form = document.forms['submit-to-google-sheet'];
 
-contactForm.onsubmit = function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Fetch API to send form data to Google Apps Script endpoint
-    fetch('https://script.google.com/macros/s/AKfycbwTb36MTP9llw3LWg3QPnPUgOcRDZjC5oh1mSlP4g5VhmI3aKUFaMuULF_zyvIZ31NyUQ/exec', {
-        method: 'POST',
-        body: new FormData(contactForm)
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('Message sent successfully!');
-            contactForm.reset(); // Reset form fields
-        } else {
-            throw new Error('Failed to send message.');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to send message. Please try again later.');
-    });
-};
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Message sent successfully!"))
+        .catch(error => console.error('Error!', error.message));
+});
