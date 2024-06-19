@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // Initializing Typed.js library
 const typed = new Typed('.multiple-text', {
-    strings: ['CSAI Sophomore at IIITD', 'Developer'],
+    strings: ['CSAI Junior at IIITD', 'Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
