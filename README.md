@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website, crafted with HTML, CSS, Bootstrap, JavaScript, Boxicons, ScrollReveal, and Typed.js.
 
-Check it out at [Vikranth3140](https://vikranth3140.github.io/)
+Check it out at [vikranth3140.github.io](https://vikranth3140.github.io/)
 
 This website showcases my projects, skills, and how to get in touch. Here's what you'll find:
 
