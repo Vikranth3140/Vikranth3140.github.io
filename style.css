@@ -242,23 +242,46 @@ section {
     display: none;
 }
 
-/* Bio Paragraph */
-.home-bio {
+/* Hero Cards Section */
+.hero-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.hero-card {
+    background: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.8rem;
+    padding: 1.8rem;
+    box-shadow: var(--card-shadow);
+    text-align: left;
+}
+
+.hero-card h4 {
     font-size: 1.6rem;
-    line-height: 1.8;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+    font-family: 'Lora', serif;
+}
+
+.hero-card p {
+    font-size: 1.35rem;
+    line-height: 1.5;
     color: var(--muted-text-color);
-    margin: 2.5rem 0;
 }
 
-.home-bio p {
-    margin-bottom: 1.5rem;
+.hero-leadership {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--muted-text-color);
+    margin-bottom: 2.5rem;
+    text-align: left;
 }
 
-.home-bio p:last-child {
-    margin-bottom: 0;
-}
-
-.home-bio strong {
+.hero-leadership strong {
     color: var(--text-color);
 }
 
@@ -1100,6 +1123,11 @@ section {
     .hero-subtitle {
         justify-content: center;
         margin: 2rem auto 3rem auto;
+    }
+    .hero-cards {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin: 2rem 0 1.5rem 0;
     }
     .research-interests, .interest-tags, .social-media, .cta-buttons {
         justify-content: center;
