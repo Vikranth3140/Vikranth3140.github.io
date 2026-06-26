@@ -754,6 +754,34 @@ section {
     flex: 1;
 }
 
+.project-bullets {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.project-bullets li {
+    font-size: 1.45rem;
+    color: var(--muted-text-color);
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.8rem;
+    line-height: 1.6;
+}
+
+.project-bullets li::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    top: -0.1rem;
+}
+
+.project-bullets li:last-child {
+    margin-bottom: 0;
+}
+
 .project-links a {
     display: inline-flex;
     align-items: center;

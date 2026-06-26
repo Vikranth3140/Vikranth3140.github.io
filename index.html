@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
         <!-- Boxicons for standard icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="style.css?v=3.0">
+        <link rel="stylesheet" type="text/css" href="style.css?v=3.1">
         <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     </head>
     <body>
@@ -24,7 +24,7 @@
                 <a href="#news">NEWS</a>
                 <a href="#publications">PUBLICATIONS</a>
                 <a href="#experience">EXPERIENCE</a>
-                <a href="#projects">PROJECTS</a>
+                <a href="#projects">SELECTED WORK</a>
                 <a href="#achievements">HONORS</a>
                 <a href="#contact">CONTACT</a>
                 <button id="theme-toggle" aria-label="Toggle dark/light mode">
@@ -498,7 +498,7 @@ series = {WWW Companion '26}
 
         <!-- Selected Projects Section -->
         <section class="projects" id="projects">
-            <h2 class="heading">Featured<span> Projects</span></h2>
+            <h2 class="heading">Selected<span> Work</span></h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
@@ -507,10 +507,12 @@ series = {WWW Companion '26}
                     </div>
                     <div class="project-info">
                         <h3>SIT RAG AI Assistant</h3>
-                        <p class="project-tags">Python · Node.js · FastAPI · LanceDB · AWS EC2</p>
-                        <p class="project-desc">
-                            A multilingual, voice-enabled Retrieval-Augmented Generation (RAG) assistant serving 500+ daily queries for the Singapore Institute of Technology (SIT). Integrates Elevenlabs STT/TTS and Conversational AI with hybrid retrieval (LanceDB + BM25) and resilient Nginx/PM2 deployment.
-                        </p>
+                        <p class="project-tags">Python · Node.js · FastAPI · AWS EC2 · LanceDB</p>
+                        <ul class="project-bullets">
+                            <li>Built a multilingual, voice-enabled RAG assistant serving 500+ daily queries for the Singapore Institute of Technology (SIT).</li>
+                            <li>Integrated Elevenlabs STT, TTS and Conversational AI, and hybrid retrieval (LanceDB + BM25) with modular microservices across FastAPI and Node.js.</li>
+                            <li>Deployed on AWS EC2 with Nginx, PM2, and systemd, achieving 99.9% uptime and resilient auto-restarts.</li>
+                        </ul>
                         <div class="project-links">
                             <a href="https://github.com/Finance-LLMs/SIT-Chatbot-RAG" target="_blank"><i class='bx bxl-github'></i> Code (GitHub)</a>
                             <a href="https://sit-chatbot.snaic.net" target="_blank" style="margin-left: 2rem;"><i class='bx bx-link-external'></i> Live Deployment</a>
@@ -526,9 +528,11 @@ series = {WWW Companion '26}
                     <div class="project-info">
                         <h3>FireSafe</h3>
                         <p class="project-tags">Python · YOLO11n · Flutter · Flask · Firebase</p>
-                        <p class="project-desc">
-                            A real-time CCTV-based safety system detecting fires and humans using a fine-tuned YOLO11n model. Integrates a Flutter mobile app, Flask backend, and Firebase Cloud Messaging for instant safety alerts and remote monitoring, achieving 54ms GPU inference latency.
-                        </p>
+                        <ul class="project-bullets">
+                            <li>Engineered a real-time CCTV-based safety system detecting fire and humans using YOLO11n (Ultralytics) fine-tuned on D-Fire + Human datasets.</li>
+                            <li>Integrated Flutter mobile app, Flask backend, and Firebase Cloud Messaging for instant safety alerts and remote monitoring.</li>
+                            <li>Achieved mAP@0.5 = 0.768, mAP@[.5:.95] = 0.446, and 54 ms/frame inference latency on GPU (640×640 input).</li>
+                        </ul>
                         <div class="project-links">
                             <a href="https://github.com/akshatparmar2634/FireSafe" target="_blank"><i class='bx bxl-github'></i> Code (GitHub)</a>
                             <a href="https://drive.google.com/drive/folders/1Ah_3Q2hE8MIuD93e6HLDXtjwC_hqN0H_" target="_blank" style="margin-left: 2rem;"><i class='bx bx-video'></i> Demo/Drive Folder</a>
@@ -637,7 +641,7 @@ series = {WWW Companion '26}
         <!-- Scripts -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="script.js?v=3.0"></script>
+        <script src="script.js?v=3.1"></script>
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbztlrYcMFZSlQPqxYANHLTEOsL1UtcmLAF_r3W_Oma9TML9fYJC5xXtnlQfUEbcQXFULg/exec'
             const form = document.forms['submit-to-google-sheet']
