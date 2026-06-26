@@ -131,16 +131,4 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .news-timeline, .publications-list, .experience-container, .projects-grid, .achievements-container, .contact-box', { origin: 'bottom' });
 
-// Initializing Typed.js library with Research Focus areas
-const typed = new Typed('.multiple-text', {
-    strings: [
-        'Multimodal Reasoning',
-        'LLM Efficiency',
-        'Agentic Automation',
-        'Human-AI Interaction'
-    ],
-    typeSpeed: 70,
-    backSpeed: 50,
-    backDelay: 1500,
-    loop: true
-});
+// ScrollReveal configuration complete

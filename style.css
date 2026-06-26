@@ -207,40 +207,35 @@ section {
     margin: 1rem 0;
 }
 
-.home-content h3 span.multiple-text {
-    color: var(--main-color);
-    font-weight: 600;
-}
-
-/* Education Highlight */
-.education-highlight {
-    margin: 2.5rem 0;
-    padding: 2rem;
-    background: var(--card-bg-color);
-    border-left: 4px solid var(--main-color);
-    border-radius: 0 0.8rem 0.8rem 0;
-    box-shadow: var(--card-shadow);
-}
-
-.education-highlight .degree {
-    font-size: 1.6rem;
-    color: var(--text-color);
-}
-
-.education-highlight .institution {
-    font-size: 1.4rem;
-    color: var(--muted-text-color);
-    margin-top: 0.5rem;
-}
-
-.education-highlight .scholarship {
-    font-size: 1.3rem;
-    color: var(--main-color);
+/* Hero Tagline & Subtitle */
+.hero-tagline {
+    font-size: 2.2rem;
     font-weight: 500;
-    margin-top: 1rem;
+    color: var(--text-color);
+    line-height: 1.4;
+    margin: 1.5rem 0;
+    max-width: 90%;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--muted-text-color);
+    margin: 2rem 0 3rem 0;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
-    gap: 0.5rem;
+}
+
+.hero-subtitle span {
+    display: inline-block;
+}
+
+.hero-subtitle .separator {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 /* Bio Paragraph */
@@ -1095,10 +1090,12 @@ section {
         width: 55vw;
         max-width: 250px;
     }
-    .education-highlight {
-        border-left: none;
-        border-top: 4px solid var(--main-color);
-        border-radius: 0 0 0.8rem 0.8rem;
+    .hero-tagline {
+        margin: 1.5rem auto;
+    }
+    .hero-subtitle {
+        justify-content: center;
+        margin: 2rem auto 3rem auto;
     }
     .research-interests, .interest-tags, .social-media, .cta-buttons {
         justify-content: center;
