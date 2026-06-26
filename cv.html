@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Vikranth Udandarao - Curriculum Vitae</title>
+        <!-- Google Fonts: Lora (Serif) & Inter (Sans-Serif) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <!-- Boxicons for standard icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css?v=2.1">
+        <script>
+            // Apply theme from localStorage or system preference immediately to prevent screen flash
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const currentTheme = savedTheme || (systemDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        </script>
+        <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    </head>
+    <body class="cv-body">
+        
+        <!-- Floating Actions Panel -->
+        <div class="cv-actions no-print">
+            <a href="index.html" class="action-btn back-btn"><i class='bx bx-left-arrow-alt'></i> Back to Portfolio</a>
+            <button onclick="window.print()" class="action-btn print-btn"><i class='bx bx-printer'></i> Print / Save PDF</button>
+            <a href="https://drive.google.com/file/d/1YNAglfngGndiY_Li6yTQQKwhxxDPyMFs/view?usp=sharing" target="_blank" class="action-btn download-btn"><i class='bx bx-download'></i> Download PDF Resume</a>
+        </div>
+
+        <!-- Main CV Document Wrapper -->
+        <div class="cv-document">
+            
+            <!-- Header Section -->
+            <header class="cv-header">
+                <h1>Vikranth Udandarao</h1>
+                <p class="subtitle">New Delhi, India</p>
+                <div class="cv-contacts">
+                    <a href="mailto:vikranth22570@iiitd.ac.in"><i class='bx bx-envelope'></i> vikranth22570@iiitd.ac.in</a>
+                    <a href="https://www.linkedin.com/in/vikranth-udandarao/" target="_blank"><i class='bx bxl-linkedin'></i> linkedin.com/in/vikranth-udandarao</a>
+                    <a href="https://github.com/Vikranth3140" target="_blank"><i class='bx bxl-github'></i> github.com/Vikranth3140</a>
+                    <a href="https://scholar.google.com/citations?user=Am4LHs0AAAAJ" target="_blank"><i class='bx bxs-graduation'></i> Google Scholar</a>
+                </div>
+            </header>
+
+            <!-- Education Section -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Education</h2>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>Indraprastha Institute of Information Technology Delhi (IIITD)</h3>
+                            <span class="cv-item-sub">B.Tech in Computer Science and Artificial Intelligence (CSAI)</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">2022 – Present</span>
+                            <span class="cv-item-date cv-expected">Expected May 2026</span>
+                        </div>
+                    </div>
+                    <div class="cv-item-details">
+                        <p class="cv-highlight-text"><strong>Awarded 100% Merit Scholarship (full tuition waiver)</strong> for academic excellence.</p>
+                        <p><strong>Research Interests:</strong> Multimodal Reasoning, LLM Efficiency, Agentic Automation, and Human-AI Interaction.</p>
+                        <p><strong>Relevant Coursework:</strong> Machine Learning, Computer Vision, Natural Language Processing, Large Deep Learning Systems, Algorithm Design &amp; Analysis, Data Structures.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research & Work Experience -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Research &amp; Work Experience</h2>
+                
+                <!-- United Airlines (Associate) -->
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>United Airlines</h3>
+                            <span class="cv-item-sub">Associate Data Scientist (Incoming)</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">Starting July 2026</span>
+                            <span class="cv-item-location">Gurugram, India</span>
+                        </div>
+                    </div>
+                    <ul class="cv-bullets">
+                        <li>Returning full-time to design, build, and deploy production-grade Generative AI systems, RAG solutions, and multi-agent orchestration pipelines for enterprise aviation workflows.</li>
+                    </ul>
+                </div>
+
+                <!-- United Airlines (Intern) -->
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>United Airlines</h3>
+                            <span class="cv-item-sub">Generative AI &amp; Data Science Intern</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">Feb 2026 – Present</span>
+                            <span class="cv-item-location">Gurugram, India</span>
+                        </div>
+                    </div>
+                    <ul class="cv-bullets">
+                        <li>Developing production-grade Generative AI systems for enterprise aviation workflows, focusing on scalability, reliability, and low-latency inference.</li>
+                        <li>Building agent-based orchestration pipelines and backend services using LangChain, FastAPI, Redis, and AWS, enabling LLM-driven automation.</li>
+                    </ul>
+                </div>
+
+                <!-- SayaCare -->
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>SayaCare</h3>
+                            <span class="cv-item-sub">AI Engineer Intern</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">May 2025 – Jul 2025</span>
+                            <span class="cv-item-location">Noida, India</span>
+                        </div>
+                    </div>
+                    <ul class="cv-bullets">
+                        <li>Developed an OCR–LLM integration pipeline using EasyOCR + DeepSeek-R1 (7B) within a Node.js/Flask API, quantized for 6GB GPUs, achieving up to 70% latency reduction and 50% manual annotation savings, while analyzing domain trade-offs.</li>
+                        <li>Proposed and evaluated a cosine similarity–based embedding retrieval model for pharmaceutical document matching, improving mapping precision by 25% on validation data.</li>
+                        <li>Deployed optimized inference under resource constraints (PyTorch, Hugging Face, OpenCV, Ubuntu GPU) for reproducible performance.</li>
+                    </ul>
+                </div>
+
+                <!-- MDMA Lab -->
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>Multimodal Digital Media Analysis Lab, IIIT Delhi</h3>
+                            <span class="cv-item-sub">Undergraduate Researcher (Advisor: Dr. Rajiv Ratn Shah)</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">Dec 2024 – Apr 2025</span>
+                            <span class="cv-item-location">New Delhi, India</span>
+                        </div>
+                    </div>
+                    <ul class="cv-bullets">
+                        <li>Investigated multi-agent reasoning architectures via the Model Context Protocol (MCP), designing six autonomous agents (Broker, Indian Markets, Global Stocks, Market Research, Deep Web Research, Digital Twin) for financial analysis automation.</li>
+                        <li>Developed the Deep Web Research agent (improving factuality by +33% ROUGE-L) and the Digital Twin agent (enhancing reasoning accuracy by +18% while reducing inference latency from 90s to 10s using vLLM).</li>
+                        <li>Conducted reproducible evaluations across FinMCP and FinQAR frameworks to benchmark agent reasoning and retrieval–generation trade-offs (github.com/Finance-LLMs).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Publications & Research Output -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Publications &amp; Research Output</h2>
+                
+                <!-- Pub 1 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>The Enterprise RAG Paradox: An Industrial Study of Governed and Continuous Documentation Pipelines for LLM-Assisted Code Generation</strong>. 
+                        Accepted at <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) – Industry Track (Oral)</em>, 2026.
+                    </p>
+                    <p class="cv-pub-authors">Authors: <strong>Udandarao V.</strong>, Sharma Jeetendra Kumar.</p>
+                </div>
+
+                <!-- Pub 2 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>FinMCP: A Multi-Agent LLM Framework for Explainable Real-Time Financial Analysis</strong>. 
+                        Accepted at <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) – Demo Track</em>, 2026.
+                    </p>
+                    <p class="cv-pub-authors">Authors: Parmar Akshat, <strong>Udandarao V.</strong>, Shakya Abhay, Hire Tanmay, Anand Avinash, Shah Rajiv Ratn, Wang Daniel Zhengkui.</p>
+                </div>
+
+                <!-- Pub 3 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>Detecting Citation Hallucinations in Large Language Model Outputs (Student Abstract)</strong>. 
+                        Accepted at <em>AAAI Conference on Artificial Intelligence (AAAI-26) Student Abstract &amp; Poster Program</em>, 2026.
+                    </p>
+                    <p class="cv-pub-authors">Authors: Misra Nipun, <strong>Udandarao V.</strong></p>
+                </div>
+
+                <!-- Pub 4 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>Roamify: An Interactive Browser Extension for Real-Time LLM-Based Travel Itinerary Generation</strong>. 
+                        Accepted at <em>The Web Conference (WWW-26) – Demo Track</em>, 2026.
+                    </p>
+                    <p class="cv-pub-authors">Authors: <strong>Udandarao V.</strong>, Vairamuthu Muthuraj, Tiju Noel Abraham, Mistry Harsh, Singh Armaan, Kumar Dhruv.</p>
+                </div>
+
+                <!-- Pub 5 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>Digital-Persona QAR: A Dataset and Pipeline for Financial Question–Answer–Reasoning from Unstructured Documents</strong>. 
+                        Accepted at <em>ACM IKDD CODS-COMAD Young Researchers Symposium</em>, 2025.
+                    </p>
+                    <p class="cv-pub-authors">Authors: Hire Tanmay, <strong>Udandarao V.</strong>, Shakya Abhay, Parmar Akshat, Anand Avinash, Shah Rajiv Ratn, Wang Daniel Zhengkui.</p>
+                </div>
+
+                <!-- Pub 6 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>Let My Crush See Me: Social-Facilitation Prompting for Zero-Shot LLM Performance Gains</strong>. 
+                        Accepted at <em>PromptEng Workshop @ The Web Conference (WWW)</em>, 2026.
+                    </p>
+                    <p class="cv-pub-authors">Authors: <strong>Udandarao V.</strong></p>
+                </div>
+
+                <!-- Pub 7 -->
+                <div class="cv-pub-item">
+                    <p class="cv-pub-citation">
+                        <strong>Suno Samjho Bolo: Rethinking Voice Interfaces for Multilingual Code-Switching and Digital Inclusion in India</strong>. 
+                        Accepted at <em>India HCI – Posters, Demos &amp; Artworks Track (Best Poster Award)</em>, 2025.
+                    </p>
+                    <p class="cv-pub-authors">Authors: <strong>Udandarao V.</strong>, Misra Nipun.</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Projects</h2>
+                
+                <!-- Project 1 -->
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>SIT RAG AI Assistant</h3>
+                            <span class="cv-item-sub">Python, Node.js, FastAPI, AWS EC2, LanceDB, Elevenlabs</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">May 2025 – Jun 2025</span>
+                        </div>
+                    </div>
+                    <ul class="cv-bullets">
+                        <li>Built a multilingual, voice-enabled RAG assistant serving 500+ daily queries for the Singapore Institute of Technology (SIT).</li>
+                        <li>Integrated Elevenlabs STT/TTS and Conversational AI with hybrid retrieval (LanceDB + BM25) across FastAPI/Node.js, deploying on AWS EC2 with Nginx and PM2 for 99.9% uptime.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <h3>FireSafe</h3>
+                            <span class="cv-item-sub">Python, YOLO11n, Flutter, Flask, Firebase</span>
+                        </div>
+                        <div class="cv-item-meta">
+                            <span class="cv-item-date">Mar 2025 – May 2025</span>
+                        </div>
+                    </div>
+                    <ul class="cv-bullets">
+                        <li>Engineered a real-time CCTV safety system detecting fires and humans using a fine-tuned YOLO11n model.</li>
+                        <li>Integrated a Flutter mobile app, Flask backend, and Firebase Cloud Messaging for safety alerts, achieving 54ms frame inference latency.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Honors, Leadership & Achievements -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Honors &amp; Leadership</h2>
+                <ul class="cv-bullets">
+                    <li><strong>President, BYLD (Software Development Club), IIITD:</strong> Led 200+ members, managed institute-wide software portals, and organized hackathons/industry workshops.</li>
+                    <li><strong>Jury-Recommended Winner, Securities Market Hackathon:</strong> Honored by SEBI, NSDL, CDSL, NSE, and BSE at the Global Fintech Fest 2025 for designing an innovative fintech solution in a competition containing 872 national teams.</li>
+                    <li><strong>100% Merit Scholarship:</strong> Awarded a full tuition waiver throughout B.Tech CSAI at IIIT Delhi in recognition of outstanding academic performance.</li>
+                    <li><strong>Batch Representative, Student Council, IIITD:</strong> Represented 150+ peers in student council discussions, driving student-life and academic initiatives.</li>
+                    <li><strong>English Core Topper (Class XII):</strong> Secured the highest marks in the graduating batch.</li>
+                </ul>
+            </section>
+
+        </div>
+    </body>
+</html>

@@ -1085,3 +1085,425 @@ section {
         text-align: center;
     }
 }
+
+/* Dedicated CV Page Styles */
+body.cv-body {
+    background: var(--second-bg-color);
+    padding: 2rem 0 10rem 0;
+}
+
+.cv-document {
+    background: var(--card-bg-color);
+    color: var(--text-color);
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 6rem 8rem;
+    border-radius: 1.2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.cv-header {
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.cv-header h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: -0.05rem;
+}
+
+.cv-header .subtitle {
+    font-size: 1.6rem;
+    color: var(--muted-text-color);
+    margin-top: 0.5rem;
+}
+
+.cv-contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.cv-contacts a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 500;
+    transition: var(--transition-speed);
+}
+
+.cv-contacts a:hover {
+    color: var(--main-color);
+}
+
+.cv-contacts a i {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.cv-section {
+    margin-bottom: 4.5rem;
+}
+
+.cv-section:last-child {
+    margin-bottom: 0;
+}
+
+.cv-section-title {
+    font-family: 'Lora', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.6rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.cv-item {
+    margin-bottom: 3.5rem;
+}
+
+.cv-item:last-child {
+    margin-bottom: 0;
+}
+
+.cv-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cv-item-header h3 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.cv-item-sub {
+    font-size: 1.5rem;
+    color: var(--muted-text-color);
+    font-weight: 500;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.cv-item-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.cv-item-date {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.cv-item-date.cv-expected {
+    color: var(--main-color);
+}
+
+.cv-item-location {
+    font-size: 1.3rem;
+    color: var(--muted-text-color);
+    margin-top: 0.3rem;
+}
+
+.cv-item-details p {
+    font-size: 1.5rem;
+    color: var(--muted-text-color);
+    margin-bottom: 1rem;
+}
+
+.cv-item-details p:last-child {
+    margin-bottom: 0;
+}
+
+.cv-highlight-text {
+    color: var(--text-color) !important;
+}
+
+.cv-bullets {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.cv-bullets li {
+    font-size: 1.5rem;
+    color: var(--muted-text-color);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.cv-bullets li::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    top: -0.2rem;
+}
+
+.cv-bullets li:last-child {
+    margin-bottom: 0;
+}
+
+.cv-pub-item {
+    margin-bottom: 2.5rem;
+}
+
+.cv-pub-item:last-child {
+    margin-bottom: 0;
+}
+
+.cv-pub-citation {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.cv-pub-authors {
+    font-size: 1.4rem;
+    color: var(--muted-text-color);
+    margin-top: 0.5rem;
+}
+
+.cv-pub-authors strong {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+}
+
+/* Floating Actions Bar */
+.cv-actions {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+    background: rgba(250, 250, 249, 0.9); /* stone-50 with transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.2rem 2.5rem;
+    border-radius: 5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+}
+
+[data-theme="dark"] .cv-actions {
+    background: rgba(15, 23, 42, 0.9); /* slate-900 with transparency */
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-speed) ease;
+    border: 1px solid transparent;
+}
+
+.back-btn {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.back-btn:hover {
+    background: var(--border-color);
+    transform: translateY(-2px);
+}
+
+.print-btn {
+    background: var(--main-color);
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .print-btn {
+    color: #0f172a !important;
+}
+
+.print-btn:hover {
+    background: var(--main-hover);
+    transform: translateY(-2px);
+}
+
+.download-btn {
+    background: var(--text-color);
+    color: var(--bg-color) !important;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Print Stylesheet Overrides */
+@media print {
+    body.cv-body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .cv-document {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+    
+    .no-print, 
+    .cv-actions {
+        display: none !important;
+    }
+    
+    .cv-header {
+        border-bottom-color: #000000 !important;
+        padding-bottom: 2rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .cv-header h1 {
+        color: #000000 !important;
+        font-size: 3.2rem !important;
+    }
+    
+    .cv-header .subtitle,
+    .cv-contacts a,
+    .cv-contacts a i {
+        color: #333333 !important;
+    }
+    
+    .cv-section-title {
+        color: #000000 !important;
+        border-bottom-color: #000000 !important;
+        font-size: 1.8rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .cv-item-header h3 {
+        color: #000000 !important;
+        font-size: 1.6rem !important;
+    }
+    
+    .cv-item-sub,
+    .cv-item-date,
+    .cv-item-location,
+    .cv-item-details p,
+    .cv-bullets li,
+    .cv-pub-citation,
+    .cv-pub-authors,
+    .cv-pub-authors strong {
+        color: #111111 !important;
+        font-size: 1.3rem !important;
+    }
+    
+    .cv-item-date.cv-expected {
+        color: #000000 !important;
+    }
+    
+    .cv-bullets li::before {
+        color: #000000 !important;
+    }
+    
+    .cv-section {
+        page-break-inside: avoid;
+        margin-bottom: 3rem !important;
+    }
+    
+    .cv-item {
+        page-break-inside: avoid;
+        margin-bottom: 2rem !important;
+    }
+    
+    .cv-pub-item {
+        page-break-inside: avoid;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Responsiveness for CV Document */
+@media (max-width: 768px) {
+    body.cv-body {
+        padding: 1rem 0 8rem 0;
+    }
+    
+    .cv-document {
+        padding: 3rem 4rem;
+    }
+    
+    .cv-header h1 {
+        font-size: 3.2rem;
+    }
+    
+    .cv-contacts {
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cv-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .cv-item-meta {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .cv-actions {
+        width: 90%;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 1.5rem;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .action-btn {
+        padding: 0.8rem 1.4rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-document {
+        padding: 2rem;
+    }
+    
+    .cv-header h1 {
+        font-size: 2.8rem;
+    }
+}
