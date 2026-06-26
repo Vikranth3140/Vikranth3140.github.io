@@ -218,24 +218,28 @@ section {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--muted-text-color);
+    font-size: 1.4rem;
     margin: 2rem 0 3rem 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     align-items: center;
 }
 
-.hero-subtitle span {
+.hero-subtitle span:not(.separator) {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.4rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 2px var(--shadow-color);
     display: inline-block;
 }
 
 .hero-subtitle .separator {
-    color: var(--main-color);
-    font-weight: bold;
-    font-size: 1.8rem;
+    display: none;
 }
 
 /* Bio Paragraph */
