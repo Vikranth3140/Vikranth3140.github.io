@@ -1128,7 +1128,7 @@ body.cv-body {
     text-align: center;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 3rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .cv-header h1 {
@@ -1287,6 +1287,10 @@ body.cv-body {
     margin-bottom: 0;
 }
 
+.cv-coursework-category {
+    color: var(--main-color);
+}
+
 .cv-pub-item {
     margin-bottom: 2.5rem;
 }
@@ -1410,7 +1414,7 @@ body.cv-body {
     .cv-header {
         border-bottom-color: #000000 !important;
         padding-bottom: 2rem !important;
-        margin-bottom: 2.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
     
     .cv-header h1 {
@@ -1469,6 +1473,10 @@ body.cv-body {
     .cv-pub-item {
         page-break-inside: avoid;
         margin-bottom: 1.5rem !important;
+    }
+    
+    .cv-coursework-category {
+        color: #000000 !important;
     }
 }
 
