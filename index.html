@@ -4,262 +4,573 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Vikranth Udandarao - Portfolio</title>
+        <title>Vikranth Udandarao - Academic Portfolio</title>
+        <!-- Google Fonts: Lora (Serif) & Inter (Sans-Serif) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <!-- Boxicons for standard icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     </head>
     <body>
-        <!--body-->
+        <!-- Header -->
         <header class="header">
-            <a href="https://vikranth3140.github.io/" class="logo">Vikranth3140.</a>
+            <a href="#" class="logo">Vikranth Udandarao</a>
             <i class='bx bx-menu' id="menu-icon"></i>
             <nav class="navbar">
                 <a href="#home" class="active">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#portfolio">PORTFOLIO</a>
-                <a href="https://dev.to/vikranth3140/">BLOGS</a>
+                <a href="#news">NEWS</a>
+                <a href="#publications">PUBLICATIONS</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#achievements">HONORS</a>
                 <a href="#contact">CONTACT</a>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class='bx bx-moon' id="theme-icon"></i>
+                </button>
             </nav>
         </header>
-        <!-- Home -->
+
+        <!-- Home Section -->
         <section class="home" id="home">
             <div class="home-content">
                 <h3>Hello, I'm</h3>
                 <h1>Vikranth Udandarao</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
-                <div class="social-media">
-                    <a href="https://github.com/Vikranth3140"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/vikranth-udandarao/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=vikranth22570@iiitd.ac.in&tf=cm"><i class='bx bxs-envelope'></i></a>
-                    <a href="https://www.instagram.com/vikranthh_/"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://dev.to/vikranth3140/"><i class='bx bxl-dev-to'></i></a>
+                <h3>And I'm focused on <span class="multiple-text"></span></h3>
+                
+                <div class="education-highlight">
+                    <p class="degree"><strong>B.Tech in Computer Science & Artificial Intelligence (CSAI)</strong></p>
+                    <p class="institution">Indraprastha Institute of Information Technology Delhi (IIITD)</p>
+                    <p class="scholarship"><i class='bx bxs-award'></i> Awarded 100% Merit Scholarship for academic excellence</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1JTn7bdNfFBE9FIaWtMzEfbnnSwFnjcCb/view?usp=sharing" class="btn">View CV</a>
+
+                <div class="research-interests">
+                    <h4>Research Interests:</h4>
+                    <div class="interest-tags">
+                        <span>Multimodal Reasoning</span>
+                        <span>LLM Efficiency</span>
+                        <span>Agentic Automation</span>
+                        <span>Human-AI Interaction</span>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://scholar.google.com/citations?user=Am4LHs0AAAAJ" target="_blank" title="Google Scholar" aria-label="Google Scholar">
+                        <!-- Custom Graduation Cap / Scholar SVG -->
+                        <svg viewBox="0 0 24 24" class="scholar-svg" fill="currentColor">
+                            <path d="M12 2L1 9l11 7 9-5.73V17h2V9L12 2zM4.07 12.29c.35.43.76.81 1.22 1.14L12 18l6.71-4.57c.46-.33.87-.71 1.22-1.14L12 17.5l-7.93-5.21z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Vikranth3140" target="_blank" title="GitHub" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/vikranth-udandarao/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="mailto:vikranth22570@iiitd.ac.in" title="Email" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                </div>
+                <div class="cta-buttons">
+                    <a href="https://drive.google.com/file/d/1YNAglfngGndiY_Li6yTQQKwhxxDPyMFs/view?usp=sharing" target="_blank" class="btn">View Curriculum Vitae</a>
+                </div>
             </div>
             <div class="home-img">
-                <img src="assets\vik-images\my-image.jpg" alt="" style="border-radius: 10%;">
+                <img src="assets/vik-images/my-image.jpg" alt="Vikranth Udandarao">
             </div>
         </section>
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="assets\vik-images\my-image2.jpg" alt="" style="border-radius: 10%;">
-            </div>
-            <div class="about-content">
-                <h2 class="heading">About<span> Me</span></h2>
-                <h3>CSAI Junior at IIITD</h3>
-                <p>I am a <span>CSAI Junior at IIIT Delhi</span> with a profound interest in the crossroads of business, technology, and science. Apart from upholding academic excellence, I actively contribute to the campus community. Serving as the <span>Batch Representative for CSAI '22</span>, I foster collaboration among students within the <span>Student Council</span> and play a pivotal role in the <span>Clubs Committee</span>, actively influencing decisions that shape various clubs on campus.
-                <br>
-                <br>
-                    Simultaneously, I hold crucial positions as the <span>Coordinator & Treasurer of BYLD</span>, the software development club, and as <span>Secretary of the Ethics and Etiquettes Committee</span>, affiliated with the Student Senate. These leadership roles highlight my dedication to both technical proficiency and creating a campus environment rooted in integrity and professionalism.
-                <br>
-                <br>
-                    Beyond my formal roles, I am also a <span>TEDx IIITD Curator</span> and bring strengths in public speaking, oratory, and critical problem-solving. Eager to connect with professionals who share a passion for innovation, I am open to exploring opportunities where I can leverage my diverse skill set to make a meaningful impact.</p>
-                <div style="text-align: center;">
-                    <a href="https://www.linkedin.com/in/vikranth-udandarao/" class="btn">Read More on LinkedIn</a>
-                </div>
-            </div>
-        </section>
-        <!-- Skills -->
-        <section class="skills" id="skills">
-            <h2 class="heading">My<span> Skills</span></h2>
-            <!-- Languages -->
-            <div class="skills-subsection">
-                <h3>Languages</h3>
-                <div class="skills-container">
-                    <div class="skills-box">
-                        <i class="bx bxl-python"></i>
-                        <h3>Python</h3>
-                    </div>
-        
-                    <div class="skills-box">
-                        <i class="bx bxl-java"></i>
-                        <h3>Java</h3>
-                    </div>
-        
-                    <div class="skills-box">
-                        <i class='bx bxs-copyright'></i>
-                        <h3>C</h3>
-                    </div>
 
-                    <div class="skills-box">
-                        <i class='bx bxl-c-plus-plus'></i>
-                        <h3>C++</h3>
-                    </div>                    
-        
-                    <div class="skills-box">
-                        <i class="bx bxl-html5"></i>
-                        <h3>HTML</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <i class="bx bxl-css3"></i>
-                        <h3>CSS</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <i class='bx bxl-javascript' ></i>
-                        <h3>JavaScript</h3>
+        <!-- News Section -->
+        <section class="news" id="news">
+            <h2 class="heading">Latest<span> News</span></h2>
+            <div class="news-timeline">
+                <div class="news-item">
+                    <div class="news-date">Feb 2026</div>
+                    <div class="news-content">
+                        Joined <strong>United Airlines</strong> as a Generative AI & Data Science Intern in Gurugram!
                     </div>
                 </div>
-            </div>
-
-            <!-- Tools and Technologies -->
-            <div class="skills-subsection">
-                <h3>Tools and Technologies</h3>
-                <div class="skills-container">
-                    <div class="skills-box">
-                        <h3>NumPy</h3>
+                <div class="news-item">
+                    <div class="news-date">Jan 2026</div>
+                    <div class="news-content">
+                        Oral presentation paper <em>"The Enterprise RAG Paradox: An Industrial Study of Governed and Continuous Documentation Pipelines for LLM-Assisted Code Generation"</em> accepted at **ECML PKDD 2026**!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>Pandas</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2026</div>
+                    <div class="news-content">
+                        Demo paper <em>"FinMCP: A Multi-Agent LLM Framework for Explainable Real-Time Financial Analysis"</em> accepted at **ECML PKDD 2026**!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>Matplotlib</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2026</div>
+                    <div class="news-content">
+                        Paper on <em>"Detecting Citation Hallucinations in Large Language Model Outputs"</em> accepted at the **AAAI-26** Student Abstract & Poster Program!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>Google Collab</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2026</div>
+                    <div class="news-content">
+                        Demo paper <em>"Roamify: An Interactive Browser Extension for Real-Time LLM-Based Travel Itinerary Generation"</em> accepted at **The Web Conference (WWW) 2026**!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>scikit-learn</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2026</div>
+                    <div class="news-content">
+                        Paper <em>"Let My Crush See Me: Social-Facilitation Prompting for Zero-Shot LLM Performance Gains"</em> accepted at PromptEng workshop @ **The Web Conference (WWW) 2026**!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>NLTK</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Nov 2025</div>
+                    <div class="news-content">
+                        Received the <strong>Best Poster Award</strong> at **India HCI 2025** for our voice interface project <em>"Suno Samjho Bolo"</em>!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>OpenCV</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Oct 2025</div>
+                    <div class="news-content">
+                        Paper <em>"Digital-Persona QAR"</em> accepted at the **ACM IKDD CODS-COMAD 2025** Young Researchers Symposium!
                     </div>
-
-                    <div class="skills-box">
-                        <h3>LangChain</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>Streamlit</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>Flask</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>LaTeX</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>Bash Script</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>MySQL</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>Git</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <h3>Linux</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Sep 2025</div>
+                    <div class="news-content">
+                        Recognized as a <strong>Jury-Recommended Winner</strong> at the **Securities Market Hackathon** (Global Fintech Fest 2025) out of 872 national teams.
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio"id="portfolio">
-            <h2 class="heading">My<span> Projects</span></h2>
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="assets\project-images\StickHero.png" alt="Stick Hero" height="400px">
-                    <div class="portfolio-layer">
-                        <h4>StickHero</h4>
-                        <p>The Stick Hero is a simple JavaFX game where the player controls a character who extends a stick to cross platforms and avoid obstacles. The game features dynamic stick extension, character movement and cherry collection.</p>
-                        <a href="https://github.com/Vikranth3140/StickHero"><i class='bx bxl-github'></i></a>
+        <!-- Publications Section -->
+        <section class="publications" id="publications">
+            <h2 class="heading">Publications &amp;<span> Research</span></h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="reasoning">LLM Reasoning &amp; Trust</button>
+                <button class="filter-btn" data-filter="agents">Agentic Automation</button>
+                <button class="filter-btn" data-filter="hci">HCI &amp; Inclusivity</button>
+            </div>
+
+            <div class="publications-list">
+                <!-- Pub 1 (New) -->
+                <div class="publication-card" data-category="reasoning">
+                    <span class="venue-badge">ECML PKDD 2026 (Oral)</span>
+                    <h3 class="pub-title">The Enterprise RAG Paradox: An Industrial Study of Governed and Continuous Documentation Pipelines for LLM-Assisted Code Generation</h3>
+                    <div class="pub-authors">
+                        <span class="author self-author">Udandarao V.</span>, 
+                        <span class="author">Sharma J.K.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) – Industry Track</em>, 2026 <strong class="highlight-text">(Oral Presentation)</strong>
+                    </div>
+                    <p class="pub-description">
+                        Conducted an industrial study at United Airlines comparing governed and continuously updated RAG pipelines for LLM-assisted version-migration code generation across 30 prompts and 10 software ecosystems. Proposed a context-aware routing strategy based on downstream code quality.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://scholar.google.com/citations?user=Am4LHs0AAAAJ" target="_blank" class="pub-link"><i class='bx bx-link-external'></i> Google Scholar</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{udandarao2026enterprise,
+  title={The Enterprise RAG Paradox: An Industrial Study of Governed and Continuous Documentation Pipelines for LLM-Assisted Code Generation},
+  author={Udandarao, Vikranth and Sharma, J. K.},
+  booktitle={European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  year={2026}
+}</code></pre>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <img src="assets\project-images\VikShell.png" alt="VikShell" height="400px">
-                    <div class="portfolio-layer">
-                        <h4>VikShell - Custom Linux Shell</h4>
-                        <p>A custom Linux shell using custom commands: word, dir, date, ls, cd, help and mkdir along with command-line options. It provides functionalities such as word counting, directory creation, and retrieving file information.</p>
-                        <a href="https://github.com/Vikranth3140/VikShell"><i class='bx bxl-github'></i></a>
+
+                <!-- Pub 2 (New) -->
+                <div class="publication-card" data-category="agents">
+                    <span class="venue-badge">ECML PKDD 2026</span>
+                    <h3 class="pub-title">FinMCP: A Multi-Agent LLM Framework for Explainable Real-Time Financial Analysis</h3>
+                    <div class="pub-authors">
+                        <span class="author">Parmar A.</span>, 
+                        <span class="author self-author">Udandarao V.</span>, 
+                        <span class="author">Shakya A.</span>, 
+                        <span class="author">Hire T.</span>, 
+                        <span class="author">Anand A.</span>, 
+                        <span class="author">Shah R.R.</span>, 
+                        <span class="author">Wang D.Z.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) – Demo Track</em>, 2026
+                    </div>
+                    <p class="pub-description">
+                        Developed an MCP-based multi-agent financial analysis system that combines real-time market data, financial documents, brokerage integration, and web research into evidence-linked analytical responses with sub-10-second latency.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://drive.google.com/file/d/1nEHwTQtEPj-O5Ima1swqZNBEaj9cTB0o/view?usp=sharing" target="_blank" class="pub-link"><i class='bx bx-play-circle'></i> Demo Link</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{parmar2026finmcp,
+  title={FinMCP: A Multi-Agent LLM Framework for Explainable Real-Time Financial Analysis},
+  author={Parmar, Aman and Udandarao, Vikranth and Shakya, Aman and Hire, Tejas and Anand, Aniket and Shah, Rajiv Ratn and Wang, Dejing Zhengkui},
+  booktitle={European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) Demos},
+  year={2026}
+}</code></pre>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <img src="assets\project-images\BitCrypt.png" alt="VikShell" height="400px">
-                    <div class="portfolio-layer">
-                        <h4>BitCrypt</h4>
-                        <p>BiCrypt Password Manager is a secure and lightweight command-line password manager written in Python. It allows users to securely store, generate and manage their passwords.</p>
-                        <a href="https://github.com/Vikranth3140/BitCrypt"><i class='bx bxl-github'></i></a>
+
+                <!-- Pub 3 -->
+                <div class="publication-card" data-category="reasoning">
+                    <span class="venue-badge">AAAI 2026</span>
+                    <h3 class="pub-title">Detecting Citation Hallucinations in Large Language Model Outputs</h3>
+                    <div class="pub-authors">
+                        <span class="author self-author">Udandarao V.</span>, 
+                        <span class="author">Misra M.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>AAAI Conference on Artificial Intelligence (AAAI-26) Student Abstract &amp; Poster Program</em>, 2026
+                    </div>
+                    <p class="pub-description">
+                        Proposed a hybrid bibliographic retrieval and LLM-verification pipeline achieving 80% precision for automatic citation hallucination detection in scholarly text.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1609/aaai.v40i48.42257" target="_blank" class="pub-link"><i class='bx bx-link-external'></i> Publisher DOI</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{udandarao2026detecting,
+  title={Detecting Citation Hallucinations in Large Language Model Outputs},
+  author={Udandarao, Vikranth and Misra, Muskan},
+  booktitle={AAAI Conference on Artificial Intelligence (AAAI) Student Abstract \& Poster Program},
+  year={2026}
+}</code></pre>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <img src="assets\project-images\Taste-Of-API.png" alt="VikShell" height="400px">
-                    <div class="portfolio-layer">
-                        <h4>Taste Of API - Food App</h4>
-                        <p>Taste of API is a user-centric app and website designed to offer a delightful culinary experience, allowing users to explore various cuisines and plan their meals based on specified calorie requirements.</p>
-                        <a href="https://github.com/Vikranth3140/Taste-Of-API"><i class='bx bxl-github'></i></a>
+
+                <!-- Pub 4 -->
+                <div class="publication-card" data-category="agents">
+                    <span class="venue-badge">WWW 2026</span>
+                    <h3 class="pub-title">Roamify: An Interactive Browser Extension for Real-Time LLM-Based Travel Itinerary Generation</h3>
+                    <div class="pub-authors">
+                        <span class="author self-author">Udandarao V.</span>, 
+                        <span class="author">Tiju N.A.</span>, 
+                        <span class="author">Vairamuthu M.</span>, 
+                        <span class="author">Mistry H.</span>, 
+                        <span class="author">Singh A.</span>, 
+                        <span class="author">Kumar D.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>The Web Conference (WWW-26) – Demo Track</em>, 2026
+                    </div>
+                    <p class="pub-description">
+                        Developed a browser-integrated travel assistant using fine-tuned T5 and LLaMA models for attraction summarization and personalized itinerary generation.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://dl.acm.org/doi/10.1145/3774905.3793121" target="_blank" class="pub-link"><i class='bx bx-link-external'></i> ACM Digital Library</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{udandarao2026roamify,
+  title={Roamify: An Interactive Browser Extension for Real-Time LLM-Based Travel Itinerary Generation},
+  author={Udandarao, Vikranth and Tiju, N. A. and Vairamuthu, M. and Mistry, H. and Singh, A. and Kumar, D.},
+  booktitle={Companion Proceedings of the Web Conference (WWW)},
+  year={2026}
+}</code></pre>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <img src="assets\project-images\CityInsight.png" alt="VikShell" height="400px">
-                    <div class="portfolio-layer">
-                        <h4>CityInsight</h4>
-                        <p>CityInsight is a Python application that integrates weather and news information, providing city-centric insights. It is built with Streamlit and offers real-time weather updates and top headlines tailored to your chosen city.</p>
-                        <div class="icon-container">
-                            <a href="https://cityinsight.streamlit.app/"><i class='bx bx-link'></i></a>
-                            <a href="https://github.com/Vikranth3140/CityInsight"><i class='bx bxl-github'></i></a>
+
+                <!-- Pub 5 -->
+                <div class="publication-card" data-category="reasoning">
+                    <span class="venue-badge">CODS-COMAD 2025</span>
+                    <h3 class="pub-title">Digital-Persona QAR: A Dataset and Pipeline for Financial Question–Answer–Reasoning from Unstructured Documents</h3>
+                    <div class="pub-authors">
+                        <span class="author">Hire T.</span>, 
+                        <span class="author self-author">Udandarao V.</span>, 
+                        <span class="author">Shakya A.</span>, 
+                        <span class="author">Parmar A.</span>, 
+                        <span class="author">Anand A.</span>, 
+                        <span class="author">Shah R.R.</span>, 
+                        <span class="author">Wang D.Z.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>ACM IKDD CODS-COMAD Young Researchers Symposium</em>, 2025
+                    </div>
+                    <p class="pub-description">
+                        Introduced a reproducible dataset and LoRA/QLoRA-based long-context pipeline for structured QAR extraction and financial reasoning evaluation from unstructured PDFs.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1145/3774905.3798091" target="_blank" class="pub-link"><i class='bx bx-link-external'></i> ACM Digital Library</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{hire2025digital,
+  title={Digital-Persona QAR: A Dataset and Pipeline for Financial Question--Answer--Reasoning from Unstructured Documents},
+  author={Hire, Tejas and Udandarao, Vikranth and Shakya, Aman and Parmar, Aayush and Anand, Aniket and Shah, Rajiv Ratn and Wang, Dejing Zhengkui},
+  booktitle={ACM IKDD CODS-COMAD Young Researchers Symposium},
+  year={2025}
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Pub 6 -->
+                <div class="publication-card" data-category="reasoning">
+                    <span class="venue-badge">WWW 2026 Workshop</span>
+                    <h3 class="pub-title">Let My Crush See Me: Social-Facilitation Prompting for Zero-Shot LLM Performance Gains</h3>
+                    <div class="pub-authors">
+                        <span class="author self-author">Udandarao V.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>PromptEng Workshop @ The Web Conference (WWW)</em>, 2026
+                    </div>
+                    <p class="pub-description">
+                        Designed a lightweight social-facilitation prompting technique inspired by psychology that improves zero-shot LLM reasoning performance without explicit chain-of-thought instructions.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.13140/RG.2.2.13318.43841" target="_blank" class="pub-link"><i class='bx bx-link-external'></i> ResearchGate DOI</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{udandarao2026crush,
+  title={Let My Crush See Me: Social-Facilitation Prompting for Zero-Shot LLM Performance Gains},
+  author={Udandarao, Vikranth},
+  booktitle={PromptEng Workshop at The Web Conference (WWW)},
+  year={2026}
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Pub 7 -->
+                <div class="publication-card" data-category="hci">
+                    <span class="venue-badge">India HCI 2025</span>
+                    <h3 class="pub-title">Suno Samjho Bolo: Rethinking Voice Interfaces for Multilingual Code-Switching and Digital Inclusion in India</h3>
+                    <div class="pub-authors">
+                        <span class="author self-author">Udandarao V.</span>, 
+                        <span class="author">Misra M.</span>
+                    </div>
+                    <div class="pub-venue">
+                        Accepted at <em>India HCI – Posters, Demos &amp; Artworks Track</em>, 2025 <strong class="highlight-text">(Best Poster Award)</strong>
+                    </div>
+                    <p class="pub-description">
+                        Designed an offline, emotion-aware voice interface supporting regional code-switching and inclusive multilingual interactions for digital inclusion.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://drive.google.com/file/d/1z7G1EDNEB4n38BWtHrsKqIN37Ehb4uRW/view?usp=drivesdk" target="_blank" class="pub-link"><i class='bx bx-file'></i> Paper PDF</a>
+                        <button class="pub-link bibtex-trigger"><i class='bx bx-code-alt'></i> BibTeX</button>
+                    </div>
+                    <div class="bibtex-box">
+                        <button class="copy-bibtex-btn"><i class='bx bx-copy'></i> Copy</button>
+                        <pre><code>@inproceedings{udandarao2025suno,
+  title={Suno Samjho Bolo: Rethinking Voice Interfaces for Multilingual Code-Switching and Digital Inclusion in India},
+  author={Udandarao, Vikranth and Misra, Muskan},
+  booktitle={India HCI Posters, Demos \& Artworks Track},
+  year={2025}
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <h2 class="heading">Research &amp;<span> Experience</span></h2>
+            
+            <div class="experience-container">
+                <!-- Exp 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Generative AI &amp; Data Science Intern</h3>
+                            <span class="company-name">United Airlines</span>
+                        </div>
+                        <div class="time-location">
+                            <span class="duration">Feb 2026 – Present</span>
+                            <span class="location"><i class='bx bx-map'></i> Gurugram, India</span>
+                        </div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Developing production-grade Generative AI systems for enterprise aviation workflows, focusing on scalability, reliability, and low-latency inference.</li>
+                        <li>Building agent-based orchestration pipelines and backend services using LangChain, FastAPI, Redis, and AWS to enable LLM-driven automation.</li>
+                    </ul>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>AI Engineer Intern</h3>
+                            <span class="company-name">SayaCare</span>
+                        </div>
+                        <div class="time-location">
+                            <span class="duration">May 2025 – Jul 2025</span>
+                            <span class="location"><i class='bx bx-map'></i> Noida, India</span>
+                        </div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Developed an OCR–LLM integration pipeline using EasyOCR + DeepSeek-R1 (7B) within a Node.js/Flask API, quantized for 6GB GPUs, achieving up to 70% latency reduction and 50% manual annotation savings.</li>
+                        <li>Proposed and evaluated a cosine similarity–based embedding retrieval model for pharmaceutical document matching, improving mapping precision by 25% on validation data.</li>
+                        <li>Deployed optimized inference under resource constraints (PyTorch, Hugging Face, OpenCV, Ubuntu GPU) for reproducible performance.</li>
+                    </ul>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Undergraduate Researcher</h3>
+                            <span class="company-name"><a href="https://github.com/Finance-LLMs" target="_blank">Multimodal Digital Media Analysis Lab</a>, IIIT Delhi</span>
+                        </div>
+                        <div class="time-location">
+                            <span class="duration">Dec 2024 – Apr 2025</span>
+                            <span class="location"><i class='bx bx-map'></i> New Delhi, India</span>
+                        </div>
+                    </div>
+                    <p class="advisor-info">Advisor: <strong><a href="https://www.iiitd.ac.in/rajivratn" target="_blank">Dr. Rajiv Ratn Shah</a></strong></p>
+                    <ul class="experience-bullets">
+                        <li>Investigated multi-agent reasoning architectures via the Model Context Protocol (MCP), designing six autonomous agents (Broker, Indian Markets, Global Stocks, Market Research, Deep Web Research, Digital Twin) for financial analysis automation.</li>
+                        <li>Developed the Deep Web Research agent (improving factuality by +33% ROUGE-L) and the Digital Twin agent (enhancing reasoning accuracy by +18% while reducing inference latency from 90s to 10s using vLLM).</li>
+                        <li>Conducted reproducible evaluations across FinMCP and FinQAR frameworks to benchmark agent reasoning and retrieval–generation trade-offs (<a href="https://github.com/Finance-LLMs" target="_blank">github.com/Finance-LLMs</a>).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section class="projects" id="projects">
+            <h2 class="heading">Featured<span> Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project-images/sit_rag_assistant.png" alt="SIT RAG AI Assistant">
+                    </div>
+                    <div class="project-info">
+                        <h3>SIT RAG AI Assistant</h3>
+                        <p class="project-tags">Python · Node.js · FastAPI · LanceDB · AWS EC2</p>
+                        <p class="project-desc">
+                            A multilingual, voice-enabled Retrieval-Augmented Generation (RAG) assistant serving 500+ daily queries for the Singapore Institute of Technology (SIT). Integrates Elevenlabs STT/TTS and Conversational AI with hybrid retrieval (LanceDB + BM25) and resilient Nginx/PM2 deployment.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Finance-LLMs/SIT-Chatbot-RAG" target="_blank"><i class='bx bxl-github'></i> Code (GitHub)</a>
+                            <a href="https://sit-chatbot.snaic.net" target="_blank" style="margin-left: 2rem;"><i class='bx bx-link-external'></i> Live Deployment</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <img src="assets\project-images\Zoo-Management-System.png" alt="VikShell" height="400px">
-                    <div class="portfolio-layer">
-                        <h4>Zoo Management System</h4>
-                        <p>The Zoo Management System is a Java-based OOPS application designed to manage zoos, animals, and attractions in a zoo. It allows administrators and visitors to use this system to visit the zoo without any hassle.</p>
-                        <a href="https://github.com/Vikranth3140/Zoo-Management-System"><i class='bx bxl-github'></i></a>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project-images/firesafe_system.png" alt="FireSafe Security System">
+                    </div>
+                    <div class="project-info">
+                        <h3>FireSafe</h3>
+                        <p class="project-tags">Python · YOLO11n · Flutter · Flask · Firebase</p>
+                        <p class="project-desc">
+                            A real-time CCTV-based safety system detecting fires and humans using a fine-tuned YOLO11n model. Integrates a Flutter mobile app, Flask backend, and Firebase Cloud Messaging for instant safety alerts and remote monitoring, achieving 54ms GPU inference latency.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/akshatparmar2634/FireSafe" target="_blank"><i class='bx bxl-github'></i> Code (GitHub)</a>
+                            <a href="https://drive.google.com/drive/folders/1Ah_3Q2hE8MIuD93e6HLDXtjwC_hqN0H_" target="_blank" style="margin-left: 2rem;"><i class='bx bx-video'></i> Demo/Drive Folder</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact"id="contact">
-            <h2 class="heading">Contact<span> Me</span></h2>
 
-            <form action="#" name="submit-to-google-sheet">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Full Name">
-                    <input type="email" name="Email_Address" placeholder="Email Address">
+        <!-- Honors and Achievements Section -->
+        <section class="achievements" id="achievements">
+            <h2 class="heading">Honors &amp;<span> Leadership</span></h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <i class='bx bx-crown icon-highlight'></i>
+                    <div>
+                        <h3>President, BYLD</h3>
+                        <span class="achievement-sub">Software Development Club, IIITD</span>
+                        <p>Led 200+ members, managed institute-wide software portals, and organized major hackathons and developer workshops.</p>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="number" name="Mobile_Number" placeholder="Mobile Number">
-                    <input type="text" name="Email_Subject" placeholder="Email Subject">
+
+                <div class="achievement-card">
+                    <i class='bx bx-trophy icon-highlight'></i>
+                    <div>
+                        <h3>Jury-Recommended Winner</h3>
+                        <span class="achievement-sub">Securities Market Hackathon (Global Fintech Fest 2025)</span>
+                        <p>Honored by SEBI, NSDL, CDSL, NSE, and BSE for designing an innovative fintech solution in a competition containing 872 national teams.</p>
+                    </div>
                 </div>
-                <textarea name="Your_Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
+
+                <div class="achievement-card">
+                    <i class='bx bx-star icon-highlight'></i>
+                    <div>
+                        <h3>100% Merit Scholarship</h3>
+                        <span class="achievement-sub">IIIT Delhi Academic Excellence</span>
+                        <p>Awarded a full tuition waiver throughout the B.Tech program in recognition of outstanding academic performance.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <i class='bx bx-user-voice icon-highlight'></i>
+                    <div>
+                        <h3>Batch Representative</h3>
+                        <span class="achievement-sub">Student Council, IIITD</span>
+                        <p>Represented 150+ peers in student council discussions, bridging faculty-student communication and driving academic initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Get In<span> Touch</span></h2>
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out if you want to collaborate on research, discuss agentic AI, or just say hello.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class='bx bx-envelope'></i>
+                            <span>vikranth22570@iiitd.ac.in</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class='bx bx-map'></i>
+                            <span>IIIT Delhi, New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="#" name="submit-to-google-sheet">
+                    <div class="input-box">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="Email_Address" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Email_Subject" placeholder="Email Subject">
+                    </div>
+                    <textarea name="Your_Message" cols="30" rows="6" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
             <span id="msg"></span>
         </section>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2024 by <a href="https://vikranth3140.github.io/">Vikranth Udandarao</a> | All Rights Reserved.</p>
+                <p>Copyright &copy; 2026 by <a href="#">Vikranth Udandarao</a> | Academic Portfolio</p>
             </div>
-            <div class="footer-text">
-                <p><a href="https://github.com/Vikranth3140/Vikranth3140.github.io"><i class='bx bx-code' style='font-size: 30px;'></i></a>
+            <div class="footer-icons">
+                <a href="https://scholar.google.com/citations?user=Am4LHs0AAAAJ" target="_blank" aria-label="Google Scholar">
+                    <svg viewBox="0 0 24 24" class="scholar-svg-footer" fill="currentColor">
+                        <path d="M12 2L1 9l11 7 9-5.73V17h2V9L12 2zM4.07 12.29c.35.43.76.81 1.22 1.14L12 18l6.71-4.57c.46-.33.87-.71 1.22-1.14L12 17.5l-7.93-5.21z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Vikranth3140" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/vikranth-udandarao/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
             </div>
             <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+                <a href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
             </div>
         </footer>
 
+        <!-- Scripts -->
         <script src="https://unpkg.com/scrollreveal"></script>
-
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="script.js"></script>
         <script>
@@ -271,10 +582,10 @@
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                     .then(response => {
-                        msg.innerHTML="Message sent successfully"
+                        msg.innerHTML = "Message sent successfully!"
                         setTimeout(function(){
-                            msg.innerHTML=""
-                        },5000)
+                            msg.innerHTML = ""
+                        }, 5000)
                         form.reset()
                     })
                     .catch(error => console.error('Error!', error.message))
