@@ -243,6 +243,26 @@ section {
     gap: 0.5rem;
 }
 
+/* Bio Paragraph */
+.home-bio {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--muted-text-color);
+    margin: 2.5rem 0;
+}
+
+.home-bio p {
+    margin-bottom: 1.5rem;
+}
+
+.home-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.home-bio strong {
+    color: var(--text-color);
+}
+
 /* Research Interests */
 .research-interests {
     margin-bottom: 3rem;
